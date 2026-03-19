@@ -6,7 +6,7 @@
   box-sizing: border-box;
   width: $card-width;
   height: $card-height;
-  padding: 32px 16px 16px;
+  padding: $card-padding-top $card-padding-sides $card-padding-bottom;
   background-color: $color-white;
   border: 1px solid $color-border;
   border-radius: 5px;
@@ -14,7 +14,7 @@
   &__image-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: $margin-image-bottom;
   }
 
   &__image {
@@ -24,18 +24,18 @@
 
   &__title {
     height: 36px;
-    margin-bottom: 5px;
+    margin-bottom: $margin-title-bottom;
     color: $color-text-main;
-    font-size: 12px;
+    font-size: $font-size-title;
     font-weight: 500;
     line-height: 18px;
   }
 
   &__code {
-    margin-bottom: 16px;
+    margin-bottom: $margin-code-bottom;
     color: $color-text-muted;
     font-family: sans-serif;
-    font-size: 10px;
+    font-size: $font-size-small;
     font-weight: 400;
     line-height: 14px;
   }
@@ -44,30 +44,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 21px;
+    margin-bottom: $margin-rating-bottom;
   }
 
   &__reviews {
-    margin-left: 8px;
+    margin-left: $margin-reviews-left;
     color: $color-text-main;
-    font-size: 10px;
+    font-size: $font-size-small;
   }
 
   &__pricing {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: $margin-pricing-bottom;
   }
 
   &__price-label {
     color: $color-text-muted;
-    font-size: 13px;
+    font-size: $font-size-label;
   }
 
   &__price-value {
     color: $color-price;
-    font-size: 18px;
+    font-size: $font-size-price;
     font-weight: 700;
   }
 
@@ -79,7 +79,7 @@
     height: 40px;
     margin-top: auto;
     color: $color-white;
-    font-size: 14px;
+    font-size: $font-size-button;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
